@@ -1,0 +1,464 @@
+html{
+
+  font-size: 62.5%;
+
+}
+
+.container{
+    display: grid;
+    grid-template:
+    'header'
+    'menu'
+    'main'
+    'footer';
+}
+
+.header {
+    grid-area: header;
+    height: 120px;
+    background-color: #874C62;
+}
+
+.header2 {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #874C62;
+  max-width: 1000px;
+  height: 120px;
+  align-items: center;
+}
+
+.main {
+  background-color:#d8d8d8;
+  grid-area: main;
+}
+
+.main2 {
+  background-color:#d8d8d8;
+  max-width: 1000px;
+  margin:auto;
+}
+
+.footer {
+  background-color: #874C62;
+  grid-area: footer;
+}
+
+.footer2{
+  max-width: 1000px;
+  margin:auto;
+  display: flex;
+  grid-area: footer;
+}
+
+.redes{
+  width:auto;
+  display: flex;
+  margin:0px auto;
+  padding: 14px 16px;
+  font-size: 18px;
+  gap: 16px;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: #333;
+  width: 100%;     
+}
+
+.menu2{
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  font-size: 16px;
+  align-items: center;
+  grid-area: menu;
+  text-align:center; 
+}
+
+.logo{
+    display: flex;
+    color: #eebeb4f1;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo img{
+    height: 110px;
+    margin-right: 10px;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ecdbb1;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    padding: 14px 16px;
+    font-size: 16px;
+    display: flex;
+    color: rgb(3, 2, 3)
+  }
+
+  .contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width:1000px;
+    margin:0px auto;
+    text-align:center;
+    background-color:#d8d8d8;
+  }
+   
+  .libro {
+    width:145px;
+    vertical-align:middle;
+    display: grid;
+    background-color:#d8d8d8;
+
+    margin:15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    grid-template-areas: 
+    'fotoLibro'
+    'comprar';
+  }
+
+  .fotoLibro{
+    width: 100%;
+  }
+
+  .comprar{
+
+    border: none;
+    color: rgb(3, 2, 3);
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #4CAF50;
+
+    width: 100%;
+  }
+
+  .contenidoLibro1 {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:400px;
+    margin:0px auto;
+    background-color:#d8d8d8;
+  }
+
+  .libro1 {
+    float: left;
+    width:300px;
+    vertical-align:middle;
+    display: grid;
+    background-color:#d8d8d8;
+
+    margin:15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    grid-template-areas: 
+    'fotoLibro'
+    'comprar';
+  }
+
+  .argumentosLibro1{
+    float:right;
+    align-items: center;
+    display: inline-grid;
+    justify-content: center;
+    position:absolute;
+    
+  }
+
+  .detallesLibro1 {
+    font-size: 26px;
+    
+    margin:15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .tituloLibro1{
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .precioLibro1{
+    border: none;
+    font-weight: bold;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    margin:0px auto;
+    background-color: #ecdbb1;
+    width: 20%;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    /*Responsive Main*/
+
+    .header2 {
+      max-width: 100%;
+      height: 120px;
+      align-items: center;
+    }
+
+    .main {
+      max-width: 100%;
+    }
+
+    .contenido {
+      width:100%;
+    }
+
+    .libro {
+      width:300px;
+    }
+
+    .redes{
+      max-width: 100%;
+    }
+}
+
+  @media only screen and (max-width: 400px) {
+
+    /*Responsive Main*/
+    
+    .libro {
+      width:85%;
+    }
+
+    .comprar{
+      font-size: 4rem;
+    }
+    
+    .active{
+      font-size: 3.5rem;
+    }
+
+    .menu2{
+      font-size: 2.4rem;
+    }
+
+    .redes{
+      font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+  /*Responsive Libro*/
+
+  .header2 {
+    max-width: 100%;
+    height: 120px;
+    align-items: center;
+  }
+
+  .main {
+    max-width: 100%;
+  }
+
+  .libro1{
+    width:300px;
+  }
+
+  .tituloLibro1{
+    font-size: 30px;
+  }
+
+  .contenidoLibro1{
+    font-size: 25px;
+    width:50%;
+  }
+
+  .argumentosLibro1{
+    width:50%;
+  }
+
+  .precioLibro1{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  /*Responsive Libro*/
+  
+  .libro1 {
+    width:auto;
+  }
+
+  .argumentosLibro1{
+    width: auto;
+  }
+
+  .detallesLibro1{
+    font-size: 2rem;
+  }
+
+  .precioLibro1{
+    font-size: 2rem;
+  }
+
+  .comprar{
+    font-size: 2rem;
+  }
+  
+  .active{
+    font-size: 2rem;
+  }
+
+  .menu2{
+    font-size: 2rem;
+  }
+
+  .redes{
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+    /*Responsive Libro*/
+  
+    .libro1 {
+      width:auto;
+    }
+    
+    .tituloLibro1{
+      font-size: 2rem;
+    }
+  
+    .argumentosLibro1{
+      width: auto;
+    }
+  
+    .detallesLibro1{
+      font-size: 1.5rem;
+    }
+  
+    .precioLibro1{
+      font-size: 1.5rem;
+    }
+  
+    .comprar{
+      font-size: 1.5rem;
+    }
+    
+    .active{
+      font-size: 1.5rem;
+    }
+  
+    .menu2{
+      font-size: 2rem;
+    }
+  
+    .redes{
+      font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+  /*Responsive Libro*/
+
+  .libro1 {
+    width:auto;
+  }
+
+  .argumentosLibro1{
+    width: auto;
+  }
+
+  .tituloLibro1{
+    font-size: 2rem;
+  }
+
+  .detallesLibro1{
+    max-width: 100%;
+    font-size: 2rem;
+  }
+
+  .precioLibro1{
+    font-size: 1.5rem;
+  }
+
+  .comprar{
+    font-size: 2rem;
+  }
+  
+  .active{
+    font-size: 3.5rem;
+  }
+
+  .menu2{
+    font-size: 2.4rem;
+  }
+
+  .redes{
+    font-size: 3.5rem;
+  }
+}
+
+
+
+
+
